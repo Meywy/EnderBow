@@ -1,0 +1,9 @@
+name: EnderBow
+version: '1.0'
+main: me.meywy.enderBow.EnderBow
+api-version: '1.19'
+authors: [ Meywy ]
+description: A plugin that adds a custom bow, that shoots ender pearls.
+website: https://meywy.is-a.dev
+commands:
+  getebow:
