@@ -23,13 +23,10 @@ public class ShootBow implements Listener {
         if(!(bow.hasItemMeta())) return;
 
         // Checks for ModelData id
-        if(bow.getItemMeta().getCustomModelData() != 11111) {
+        if(bow.getItemMeta().getCustomModelData() == 11111) {
             e.setCancelled(true);
+            entity.launchProjectile(EnderPearl.class, e.getProjectile().getVelocity());
         }
-
-        e.setCancelled(true);
-        entity.launchProjectile(EnderPearl.class, e.getProjectile().getVelocity());
-
     }
 
 }
